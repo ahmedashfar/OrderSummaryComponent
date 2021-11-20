@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+    
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.card {
+    background-color: white;
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 5%;
+    bottom: 10%;
+    border-radius: 25px;
+    padding-bottom: 70px;
+
+}
+.cardImage img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.cardText {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 15px 70px;
+}
+.cardText p {
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+}
+.musicImage {
+    height: 35px;
+    width: 35px;
+    padding: 20px;
+}
+.annualPlan {
+    width: 100%;
+    display: inline-flex;
+    background-color:  hsl(225, 100%, 98%);
+    padding: 0 10px;
+    border-radius: 15px;
+    
+}
+.apPrice {
+    display: auto !important;
+}
+.change {
+    padding-top: 25px;
+    padding-left: 60px;
+}
+.change:hover {
+    text-decoration: none;
+    color:   hsl(245, 66%, 59%);
+}
+.apPrice h4 {
+    margin-bottom: 0px;
+    font-weight: 900 !important;
+}
+.apPrice p {
+    margin-top: 0px;
+}
+.paymentButton {
+    width: 100%;
+    background-color:  hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 900 !important;
+    box-shadow: 0px 20px 20px 0px hsl(225deg 100% 94%);
+}
+.paymentButton:hover {
+    background-color:  hsl(245, 66%, 59%);
+}
+.cancelLink {
+    padding-top: 30px;
+    font-weight: 900 !important;
+    color: grey;
+}
+.cancelLink:hover {
+    color: black;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 376px) {
+    .card {
+            height: 80%;
+            width: 95%;
+            right: 0;
+            left: 10px;
+            top: 40px;
+    }
+    .cardText {
+        padding: 15px 40px;
+    }
+}
